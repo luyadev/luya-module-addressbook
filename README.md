@@ -3,6 +3,8 @@
 This modules provides a simple way to manage multiple address records and to render them in the frontend.
 It also allows to to group the different contacts.
 
+Please see the [luya guides](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md) for a comprehensive guide how to create this module.
+
 ## Installation
 
 Require the address module via composer
