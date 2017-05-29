@@ -11,25 +11,24 @@ class DefaultController extends Controller
     public function actionIndex()
     {
         $groups = Group::find()->all();
-        $providers = [];
-        foreach ($groups as $group) {
-            $providers[] = new ActiveDataProvider([
-                'query' => Contact::find()->where(['group_id' => $group->id]),
-                'pagination' => [
-                    'pageSize' => 20,
-                ],
-                'sort' => [
-                    'defaultOrder' => [
-                        'group_id' => SORT_ASC,
-                        'lastname' => SORT_ASC,
-                    ]
-                ],
-            ]);
-        }
-
         return $this->render('index', [
-            'providers' => $providers,
             'groups' => $groups
+        ]);
+    }
+
+    public function getGroupProvider(Group $group)
+    {
+        return new ActiveDataProvider([
+            'query' => Contact::find()->where(['group_id' => $group->id]),
+            'pagination' => [
+                'pageSize' => 20,
+            ],
+            'sort' => [
+                'defaultOrder' => [
+                    'group_id' => SORT_ASC,
+                    'lastname' => SORT_ASC,
+                ]
+            ],
         ]);
     }
 

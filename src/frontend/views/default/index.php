@@ -1,7 +1,7 @@
 <? foreach ($groups as $group): ?>
     <h3><?= $group->name ?></h3>
     <?= \yii\grid\GridView::widget([
-        'dataProvider' => $providers[$i],
+        'dataProvider' => $this->context->getGroupProvider($group),
         'columns' => [
             [
                 'attribute' => 'firstname',
