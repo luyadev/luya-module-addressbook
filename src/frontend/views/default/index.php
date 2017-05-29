@@ -1,5 +1,5 @@
-<? for ($i = 0; $i < count($groups); $i++): ?>
-    <h3><?= $groups[$i]->name ?></h3>
+<? foreach ($groups as $group): ?>
+    <h3><?= $group->name ?></h3>
     <?= \yii\grid\GridView::widget([
         'dataProvider' => $providers[$i],
         'columns' => [
@@ -33,4 +33,4 @@
         },
         'tableOptions' => ['class' => 'table table-bordered']
     ]); ?>
-<? endfor; ?>
+<? endforeach; ?>
