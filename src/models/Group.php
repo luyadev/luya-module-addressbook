@@ -88,6 +88,13 @@ class Group extends NgRestModel
         ];
     }
 
+    public function ngRestActiveWindows()
+    {
+        return [
+            ['class' => \luya\addressbook\admin\aws\GroupEmailActiveWindow::className(), 'alias' => 'Email to group', 'icon' => 'email'],
+        ];
+    }
+
     public function getContacts()
     {
         return $this->hasMany(Contact::class, ["group_id" => "id"]);
