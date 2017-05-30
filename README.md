@@ -50,6 +50,7 @@ The Active Window in the admin module will allow you to send an email to all gro
 ![Showing the ActiveWindow](https://raw.githubusercontent.com/luyadev/luya/master/docs/guide/img/aws-result.gif "Showing the ActiveWindow")
 
 The frontend module will display all contacts for each group and you can get additional detailed infos by clicking on a contact:
+
 ![address book frontend](https://raw.githubusercontent.com/luyadev/luya/master/docs/guide/img/addressbook-demo.gif "address book frontend")
 
 
