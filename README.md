@@ -6,14 +6,12 @@
 # LUYA address book module
 
 This module is the result of the comprehensive LUYA module lessons.
+[The first part](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md) described how to create the
+addressbook frontend and admin module.
+[The second part](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md) showed how to create an Active Window
+and how to add it to the CRUD view of the group model.
 
-The first part described setting up the addressbook module:
-[Create an admin and frontend module](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md)
-
-The second part showed how to create an Active Window and how to add it to the CRUD view of the group model:
-[Create an Active Window](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md)
-
-This module itself provides a simple way to manage multiple address records and to render them in the frontend.
+The module itself provides a simple way to manage multiple address records and to render them in the frontend.
 It also allows to to group the different contacts and send an email to all members of a group.
 
 ## Installation
@@ -24,7 +22,7 @@ composer require luyadev/luya-module-addressbook
 ```
 and install/update with `composer install` oder `composer update`
 
-Add both address book modules (admin and frontend) to config:
+Add both address book modules (admin and frontend) to your project config:
 
 ```php
 'modules' => [
@@ -35,9 +33,23 @@ Add both address book modules (admin and frontend) to config:
 ]
 ```
 
-Don't forget to register the modules with `/vendor/bin/luya import`
+Don't forget to register the modules with `/vendor/bin/luya import` and set the permissions:
+
+![Settings permissions](https://raw.githubusercontent.com/luyadev/luya/master/docs/guide/img/addressbook-permissions.gif "Settings permissions")
 
 ## Integrate the frontend module
 
-Create a module page in CMS and choose the `addressbook` module.
+Create a module page in CMS and choose the `addressbook` module:
+
+![Creating the module page](https://raw.githubusercontent.com/luyadev/luya/master/docs/guide/img/addressbook-createpage.gif "Create a module page")
+
+## Demo
+
+The Active Window in the admin module will allow you to send an email to all group members:
+
+![Showing the ActiveWindow](https://raw.githubusercontent.com/luyadev/luya/master/docs/guide/img/aws-result.gif "Showing the ActiveWindow")
+
+The frontend module will display all contacts for each group and you can get additional detailed infos by clicking on a contact:
+![address book frontend](https://raw.githubusercontent.com/luyadev/luya/master/docs/guide/img/addressbook-demo.gif "address book frontend")
+
 
