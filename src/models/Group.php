@@ -87,4 +87,9 @@ class Group extends NgRestModel
             ['delete', true],
         ];
     }
+
+    public function getContacts()
+    {
+        return $this->hasMany(Contact::class, ["group_id" => "id"]);
+    }
 }
