@@ -6,9 +6,9 @@
 # LUYA address book module
 
 This module is the result of the comprehensive LUYA module lessons.
-[The first part](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md) described how to create the
-addressbook frontend and admin module.
-[The second part](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md) showed how to create an Active Window
++ how to [create the
+addressbook frontend and admin module](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md).
++ how to [create an Active Window](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md)
 and how to add it to the CRUD view of the group model.
 
 The module itself provides a simple way to manage multiple address records and to render them in the frontend.
