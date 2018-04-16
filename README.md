@@ -7,8 +7,8 @@
 
 This module is the result of the comprehensive LUYA module lessons.
 + how to [create the
-addressbook frontend and admin module](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md).
-+ how to [create an Active Window](https://github.com/luyadev/luya/blob/master/docs/guide/lesson-module.md)
+addressbook frontend and admin module](https://luya.io/guide/lesson-module).
++ how to [create an Active Window](https://luya.io/guide/lesson-activewindow)
 and how to add it to the CRUD view of the group model.
 
 The module itself provides a simple way to manage multiple address records and to render them in the frontend.
