@@ -19,7 +19,7 @@ It also allows to to group the different contacts and send an email to all membe
 Require the address module via composer
 
 ```sh
-composer require luyadev/luya-module-addressbook:~1.0.0
+composer require luyadev/luya-module-addressbook
 ```
 and install/update with `composer install` oder `composer update`
 
