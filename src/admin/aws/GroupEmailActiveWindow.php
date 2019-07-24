@@ -3,14 +3,12 @@ namespace luya\addressbook\admin\aws;
 
 use Yii;
 use luya\admin\ngrest\base\ActiveWindow;
-use luya\components;
-use luya\addressbook\models;
 
 class GroupEmailActiveWindow extends ActiveWindow
 {
     public $module = '@addressbookadmin';
 
-    public $alias = 'Group Email Active Window';
+    public $alias = 'Send Email';
 
     public $icon = 'extension';
 

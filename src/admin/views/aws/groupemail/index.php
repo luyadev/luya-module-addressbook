@@ -1,6 +1,5 @@
 <?php
-use luya\admin\ngrest\aw\CallbackFormWidget;
-
+use luya\admin\ngrest\aw\ActiveWindowFormWidget;
 ?>
 <h4>Group Contacts</h4>
 <table class="striped">
@@ -23,7 +22,7 @@ use luya\admin\ngrest\aw\CallbackFormWidget;
 <h4>Send email</h4>
 <p>Write an email to all contacts in this group.</p>
 
-<?php $form = CallbackFormWidget::begin([
+<?php $form = ActiveWindowFormWidget::begin([
     'callback' => 'send-mail',
     'buttonValue' => 'Send',
     'options' => ['closeOnSuccess' => true]
