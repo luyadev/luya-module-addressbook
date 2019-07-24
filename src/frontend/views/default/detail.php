@@ -1,9 +1,13 @@
+<?php
+use luya\helpers\Url;
+use yii\widgets\DetailView;
+
+?>
 <div>
-    <a href="<?= $route = \luya\helpers\Url::toRoute(['/addressbook']); ?>">< Back</a>
+    <a href="<?= Url::toRoute(['/addressbook']); ?>">< Back</a>
 </div>
 <br/>
-
-<?= \yii\widgets\DetailView::widget([
+<?= DetailView::widget([
     'model' => $model,
     'attributes' => [
         'salutation',

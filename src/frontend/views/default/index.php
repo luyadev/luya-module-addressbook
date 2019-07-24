@@ -1,6 +1,10 @@
-<? foreach ($groups as $group): ?>
+<?php
+use yii\grid\GridView;
+
+?>
+<?php foreach ($groups as $group): ?>
     <h3><?= $group->name ?></h3>
-    <?= \yii\grid\GridView::widget([
+    <?= GridView::widget([
         'dataProvider' => $this->context->getGroupProvider($group),
         'columns' => [
             [
@@ -33,4 +37,4 @@
         },
         'tableOptions' => ['class' => 'table table-bordered']
     ]); ?>
-<? endforeach; ?>
+<?php endforeach; ?>

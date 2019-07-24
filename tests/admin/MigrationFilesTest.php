@@ -14,4 +14,3 @@ class MigrationFilesTest extends AddressbookTestCase
         $this->checkMigrationFolder("@addressbookadmin/migrations");
     }
 }
-

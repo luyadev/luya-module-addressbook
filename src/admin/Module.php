@@ -5,7 +5,7 @@ namespace luya\addressbook\admin;
 /**
  * Addressbook Admin Module.
  *
- * File has been created with `module/create` command on LUYA version 1.0.0-RC3. 
+ * File has been created with `module/create` command on LUYA version 1.0.0-RC3.
  */
 class Module extends \luya\admin\base\Module
 {

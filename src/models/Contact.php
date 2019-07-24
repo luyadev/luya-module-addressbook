@@ -7,8 +7,8 @@ use luya\admin\ngrest\base\NgRestModel;
 
 /**
  * Contact.
- * 
- * File has been created with `crud/create` command on LUYA version 1.0.0-RC3. 
+ *
+ * File has been created with `crud/create` command on LUYA version 1.0.0-RC3.
  *
  * @property integer $id
  * @property integer $group_id
@@ -122,5 +122,4 @@ class Contact extends NgRestModel
             ['delete', false],
         ];
     }
-
 }

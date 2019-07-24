@@ -4,8 +4,8 @@ namespace luya\addressbook\admin\apis;
 
 /**
  * Group Controller.
- * 
- * File has been created with `crud/create` command on LUYA version 1.0.0-RC3. 
+ *
+ * File has been created with `crud/create` command on LUYA version 1.0.0-RC3.
  */
 class GroupController extends \luya\admin\ngrest\base\Api
 {
