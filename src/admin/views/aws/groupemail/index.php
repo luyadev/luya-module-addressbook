@@ -2,7 +2,7 @@
 use luya\admin\ngrest\aw\ActiveWindowFormWidget;
 ?>
 <h4>Group Contacts</h4>
-<table class="striped">
+<table class="table table-striped">
     <thead>
     <tr>
         <th>First Name</th>

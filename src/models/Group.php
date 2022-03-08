@@ -2,6 +2,7 @@
 
 namespace luya\addressbook\models;
 
+use luya\addressbook\admin\aws\GroupEmailActiveWindow;
 use Yii;
 use luya\admin\ngrest\base\NgRestModel;
 
@@ -91,7 +92,7 @@ class Group extends NgRestModel
     public function ngRestActiveWindows()
     {
         return [
-            ['class' => \luya\addressbook\admin\aws\GroupEmailActiveWindow::className(), 'alias' => 'Email to group', 'icon' => 'email'],
+            ['class' => GroupEmailActiveWindow::class],
         ];
     }
 

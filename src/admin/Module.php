@@ -17,9 +17,9 @@ class Module extends \luya\admin\base\Module
     public function getMenu()
     {
         return (new \luya\admin\components\AdminMenuBuilder($this))
-            ->node('Addressbook', 'extension')
+            ->node('Addressbook', 'book')
             ->group('Settings')
-            ->itemApi('Contact', 'addressbookadmin/contact/index', 'label', 'api-addressbook-contact')
+            ->itemApi('Contact', 'addressbookadmin/contact/index', 'person', 'api-addressbook-contact')
             ->itemApi('Group', 'addressbookadmin/group/index', 'label', 'api-addressbook-group');
     }
 }

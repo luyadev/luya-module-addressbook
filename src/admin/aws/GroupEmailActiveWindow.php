@@ -8,9 +8,20 @@ class GroupEmailActiveWindow extends ActiveWindow
 {
     public $module = '@addressbookadmin';
 
-    public $alias = 'Send Email';
+    public function defaultLabel()
+    {
+        return 'Send E-Mail';
+    }
 
-    public $icon = 'extension';
+    public function defaultIcon()
+    {
+        return 'mail';
+    }
+
+    public function getTitle()
+    {
+        return $this->model->name;
+    }
 
     public function index()
     {
